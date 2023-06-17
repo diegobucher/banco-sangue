@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+	crossorigin="anonymous">
+
+<title>Banco de sangue</title>
+</head>
+<body>
+	<h1>Resultado</h1>
+	</br>
+	<h2>Candidatos por estado</h2>
+	<table class="table table-bordered" style="text-align: center">
+		<thead class="table-light">
+			<tr>
+				<th scope="col">Acre</th>
+				<th scope="col">Alagoas</th>
+				<th scope="col">Amapá</th>
+				<th scope="col">Amazonas</th>
+				<th scope="col">Bahia</th>
+				<th scope="col">Ceará</th>
+				<th scope="col">Espírito Santo</th>
+				<th scope="col">Goiás</th>
+				<th scope="col">Maranhão</th>
+				<th scope="col">Mato Grosso</th>
+				<th scope="col">Mato Grosso do Sul</th>
+				<th scope="col">Minas Gerais</th>
+				<th scope="col">Pará</th>
+				<th scope="col">Paraíba</th>
+				<th scope="col">Paraná</th>
+				<th scope="col">Pernambuco</th>
+				<th scope="col">Piauí</th>
+				<th scope="col">Rio de Janeiro</th>
+				<th scope="col">Rio Grande do Norte</th>
+				<th scope="col">Rio Grande do Sul</th>
+				<th scope="col">Rondônia</th>
+				<th scope="col">Roraima</th>
+				<th scope="col">Santa Catarina</th>
+				<th scope="col">São Paulo</th>
+				<th scope="col">Sergipe</th>
+				<th scope="col">Tocantins</th>
+				<th scope="col">Distrito Federal</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td data-th-text="${resultado.candidatosPorEstado.ac}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.al}"></td>			
+				<td data-th-text="${resultado.candidatosPorEstado.ap}"></td>			
+				<td data-th-text="${resultado.candidatosPorEstado.am}"></td>			
+				<td data-th-text="${resultado.candidatosPorEstado.ba}"></td>			
+				<td data-th-text="${resultado.candidatosPorEstado.ce}"></td>			
+				<td data-th-text="${resultado.candidatosPorEstado.es}"></td>			
+				<td data-th-text="${resultado.candidatosPorEstado.go}"></td>			
+				<td data-th-text="${resultado.candidatosPorEstado.ma}"></td>			
+				<td data-th-text="${resultado.candidatosPorEstado.mg}"></td>			
+				<td data-th-text="${resultado.candidatosPorEstado.ms}"></td>			
+				<td data-th-text="${resultado.candidatosPorEstado.mg}"></td>			
+				<td data-th-text="${resultado.candidatosPorEstado.pa}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.pb}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.pr}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.pb}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.pi}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.rj}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.rn}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.rs}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.ro}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.rr}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.sc}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.sp}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.se}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.to}"></td>
+				<td data-th-text="${resultado.candidatosPorEstado.df}"></td>
+			</tr>
+		</tbody>
+	</table>
+	</br>
+	<h2>IMC médio por faixa de idade</h2>
+	<table class="table table-bordered" style="text-align: center">
+		<thead class="table-light">
+			<tr>
+				<th scope="col">0 a 10</th>
+				<th scope="col">11 a 20</th>
+				<th scope="col">21 a 30</th>
+				<th scope="col">31 a 40</th>
+				<th scope="col">41 a 50</th>
+				<th scope="col">51 a 60</th>
+				<th scope="col">61 a 70</th>
+				<th scope="col">71 a 80</th>
+				<th scope="col">81 a 90</th>
+				<th scope="col">91 a 100</th>
+				<th scope="col">Mais de 101</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td data-th-text="${resultado.imcPorFaixaIdade.imc0a10}"></td>
+				<td data-th-text="${resultado.imcPorFaixaIdade.imc11a20}"></td>
+				<td data-th-text="${resultado.imcPorFaixaIdade.imc21a30}"></td>
+				<td data-th-text="${resultado.imcPorFaixaIdade.imc31a40}"></td>
+				<td data-th-text="${resultado.imcPorFaixaIdade.imc41a50}"></td>
+				<td data-th-text="${resultado.imcPorFaixaIdade.imc51a60}"></td>
+				<td data-th-text="${resultado.imcPorFaixaIdade.imc61a70}"></td>
+				<td data-th-text="${resultado.imcPorFaixaIdade.imc71a80}"></td>
+				<td data-th-text="${resultado.imcPorFaixaIdade.imc81a90}"></td>
+				<td data-th-text="${resultado.imcPorFaixaIdade.imc91a100}"></td>
+				<td data-th-text="${resultado.imcPorFaixaIdade.imc101}"></td>
+			</tr>
+		</tbody>
+	</table>
+</br>
+<h2>Percentual de obesos entre homens e mulheres</h2>
+<table class="table table-bordered" style="text-align: center">
+	<thead class="table-light">
+		<tr>
+			<th scope="col">Homens</th>
+			<th scope="col">Mulheres</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td data-th-text="${resultado.percentObesoPorSexo.homens}"></td>
+			<td data-th-text="${resultado.percentObesoPorSexo.mulheres}" data-mask="000.00"></td>
+		</tr>
+	</tbody>
+</table>
+</br>
+<h2>Média de idade por tipo sanguíneo</h2>
+<table class="table table-bordered" style="text-align: center">
+	<thead class="table-light">
+		<tr>
+			<th scope="col">A+</th>
+			<th scope="col">A-</th>
+			<th scope="col">B+</th>
+			<th scope="col">B-</th>
+			<th scope="col">AB+</th>
+			<th scope="col">AB-</th>
+			<th scope="col">O+</th>
+			<th scope="col">O-</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td data-th-text="${resultado.idadeMediaPorTipoSanguineo.APositivo}"></td>
+			<td data-th-text="${resultado.idadeMediaPorTipoSanguineo.ANegativo}"></td>
+			<td data-th-text="${resultado.idadeMediaPorTipoSanguineo.BPositivo}"></td>
+			<td data-th-text="${resultado.idadeMediaPorTipoSanguineo.BNegativo}"></td>
+			<td data-th-text="${resultado.idadeMediaPorTipoSanguineo.ABPositivo}"></td>
+			<td data-th-text="${resultado.idadeMediaPorTipoSanguineo.ABNegativo}"></td>
+			<td data-th-text="${resultado.idadeMediaPorTipoSanguineo.OPositivo}"></td>
+			<td data-th-text="${resultado.idadeMediaPorTipoSanguineo.ONegativo}"></td>
+		</tr>
+	</tbody>
+</table>
+</br>
+<h2>Possíveis doadores para cada tipo sanguíneo receptor</h2>
+<table class="table table-bordered" style="text-align: center">
+	<thead class="table-light">
+		<tr>
+			<th scope="col">A+</th>
+			<th scope="col">A-</th>
+			<th scope="col">B+</th>
+			<th scope="col">B-</th>
+			<th scope="col">AB+</th>
+			<th scope="col">AB-</th>
+			<th scope="col">O+</th>
+			<th scope="col">O-</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td data-th-text="${resultado.qtdDoadorPorTipoSanguineo.APositivo}"></td>
+			<td data-th-text="${resultado.qtdDoadorPorTipoSanguineo.ANegativo}"></td>
+			<td data-th-text="${resultado.qtdDoadorPorTipoSanguineo.BPositivo}"></td>
+			<td data-th-text="${resultado.qtdDoadorPorTipoSanguineo.BNegativo}"></td>
+			<td data-th-text="${resultado.qtdDoadorPorTipoSanguineo.ABPositivo}"></td>
+			<td data-th-text="${resultado.qtdDoadorPorTipoSanguineo.ABNegativo}"></td>
+			<td data-th-text="${resultado.qtdDoadorPorTipoSanguineo.OPositivo}"></td>
+			<td data-th-text="${resultado.qtdDoadorPorTipoSanguineo.ONegativo}"></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
